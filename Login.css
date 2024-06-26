@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.full{
+    background-image: url("bg.png");
+    /* filter: blur(8px); */
+    /* size: 100%; */
+    display: flex;
+    
+    
+}
+
+.left{
+    background-image: url("cort.jpg");
+    background-size: cover;
+    background-position: center; /* or other keywords or coordinates */
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 95vh;
+    background-color: beige;
+    margin: 2%;
+    border-radius: 4%;
+    color: aliceblue;   
+    padding: 2% 2%  5%;
+}
+
+
+.right{
+    align-items: center;
+    width: 40%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 20px;
+    margin: 4% 0% 0% 0%;
+    padding: 2%;
+    position: relative;
+    left: -5%;
+}
+
+.fs{
+    margin-left: -3% !important;
+
+}
+
+.container h2{
+    margin-bottom: 6%;
+    text-align: center;
+}
+
+.right input{
+    border: 2pt solid rgb(227, 216, 0);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    
+}
+
+.right button{
+    margin: 4% 0% 4%;
+    border-radius: 10px;
+    padding: 2% 0% 2%;
+}
+
+.sigin button{
+    padding: 1%;
+    font-size: medium;
+    padding: 0 10% 0%;
+    gap: 2%;
+    margin-left: 2%;
+}
+
+.sigin{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    
+}

@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: aliceblue;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  /* background-color: black; */
+  position: fixed !important;
+  z-index: 3;
+}
+
+.navbar:hover {
+  background-color: black;
+}
+
+.nav-item a:hover{
+    color: #28a745 !important;
+}
+
+.navbar-nav {
+  gap: 15px;
+}
+
+.nav-link {
+  color: aliceblue !important;
+}
+
+.search-grp input {
+  width: 300px;
+}
+
+.rounded-img {
+  padding: 0;
+  border-radius: 100%;
+}
+
+.profile {
+  width: 50px;
+  padding: 0 !important;
+  margin-right: 60px !important;
+}
+
+.add-btn:hover .profile-box {
+  display: block;
+}
+
+.profile img {
+  width: 40px;
+}
+
+.main-card {
+  background-color: beige;
+  /* width: 100%; */
+  /* height: 50%; */
+  color: black;
+}
+
+.carousel-control-prev {
+  object-fit: cover;
+  background-color: aqua;
+}
+
+.movie-star {
+  margin: 1% 1% 0% 1%;
+  display: flex;
+}
+
+.movie-star button {
+  margin-left: 1%;
+  margin-top: 0.5%;
+  width: 8%;
+  height: 3% !important;
+  padding: 5px;
+  border-radius: 10px;
+  border: 0cap;
+  background-color: black;
+  color: aliceblue;
+  font-size: large;
+}
+
+.card-group {
+  display: flex;
+  flex-wrap: nowrap !important;
+  overflow: auto !important;
+  justify-content: start;
+  border-radius: 10px;
+  z-index: 4;
+}
+
+.cardd {
+  min-width: 15% !important;
+  max-width: 15% !important;
+  height: 39px !important;
+  background-size: cover;
+  margin: 0px 9px 20%;
+  border-radius: 50px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 700%;
+  /* object-fit: cover; */
+  background-size: cover;
+}
+
+.card-body {
+  background-color: rgb(55, 55, 55);
+  color: aliceblue;
+  text-wrap: wrap;
+}
+
+.card-body {
+  height: 200px;
+  overflow: auto;
+  display: none;
+}
+
+.card-footer {
+  display: none;
+}
+
+.card-group:hover {
+  cursor: pointer;
+}
+
+.cardd:hover .card-body,
+.cardd:hover .card-img-top,
+.cardd:hover .card-footer {
+  display: block;
+  cursor: pointer;
+  scale: 1.3;
+  /* position: relative;
+  bottom: 300px;
+  overflow:visible; */
+
+  
+}
+
+
+
+body {
+  background-color: rgb(50, 50, 50);
+}
+
+.popup-over {
+  background-color: black;
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  height: 1000%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+
+.movie_container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 2;
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+}
+
+.Add_movies h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.formm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.poster_btn {
+  display: inline-block;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.poster_btn:hover {
+  background-color: #0056b3;
+}
+
+#poster {
+  display: none;
+}
+
+.movie_ts {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.close-btn {
+  padding: 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+  background-color: #c82333;
+}
+
+/*  */
+
+/* profile-slide */
+
+.profile-box {
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  color: aliceblue;
+  position: absolute;
+  top: 10%;
+  right: 40px;
+  border-radius: 20px;
+  display: none;
+  z-index: 4;
+}
+
+.menu-item,
+.sign-out {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.menu-item:hover,
+.sign-out:hover {
+  background-color: rgba(184, 184, 184, 0.1);
+}
+
+.menu-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.sign-out {
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 10px;
+  text-align: center;
+  justify-content: center;
+}

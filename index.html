@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>main</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header. -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+       <img width="70px" src="https://img.icons8.com/?size=100&id=20519&format=png&color=000000" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div style="margin-left: 40px;" class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TV Show</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-disabled="true">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-disabled="true">Web Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-disabled="true">Exit</a>
+          </li>
+        </ul>
+        <form class="d-flex search-grp" role="search">
+          <input  class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <div class="profile">
+      <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="spy.png" class="rounded-img" alt="">
+      </a>
+    </div>
+  </nav>
+
+
+  <!-- Main movie cards -->
+  <div id="carouselExampleCaptions" class="carousel slide main-card">
+    <div class="carousel-indicators">
+      <button type="button" class="active" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- <img src="Leo Card.jpeg" class="d-block w-100" alt="..."> -->
+        <iframe width="100%" height="720" src="https://www.youtube.com/embed/ShsFxGV_thk?si=_BxXks0-JCfJJ8RK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="carousel-caption d-none d-md-block">
+          <h1>LEO</h1>
+          <h3>8.7⭐️ LCU movies Vijay, Trisha, Kamal</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- <img src="/asset/Kanguva Card.jpg" class="d-block w-100" alt="..."> -->
+        <iframe width="100%" height="720" src="https://www.youtube.com/embed/08cfjZNKZbQ?si=_L9lISqfatk7q8Cw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Pushpa 2</h5>
+          <p>Comming soon</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- <img src="..." class="d-block w-100" alt="beast"> -->
+        <iframe width="100%" height="720" src="https://www.youtube.com/embed/6xqNk5Sf5jo?si=gajJUJBkylXfBQtF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Coolie</h5>
+          <p>Comming Soon</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Movie Thumnails -->
+  <div class="thumnails">
+    <div class="movie-star">
+      <h1>Vijay Movies</h1>
+      <button class="add-btn" id="popup-btn" onclick="popupover()">Add</button>
+    </div>
+    <div class="card-group card-wrap">
+      <div class="cardd">
+        <img src="./asset/Master.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Master</h5>
+          <p class="card-text">An alcoholic professor is enrolled to teach at a juvenile facility, unbeknownst to him.
+            He soon clashes with a ruthless gangster, who uses the children as scapegoats for his crimes.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+
+      <!-- Start -->
+      <div class="cardd">
+        <img src="./asset/Kabali.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Kabali</h5>
+          <p class="card-text">An alcoholic professor is enrolled to teach at a juvenile facility, unbeknownst to him.
+            He soon clashes with a ruthless gangster, who uses the children as scapegoats for his crimes.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="cardd">
+        <img src="./asset/Leo.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Leo</h5>
+          <p class="card-text">An alcoholic professor is enrolled to teach at a juvenile facility, unbeknownst to him.
+            He soon clashes with a ruthless gangster, who uses the children as scapegoats for his crimes.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+
+      <div class="cardd">
+        <img src="./asset/Ganguva.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ganguva</h5>
+          <p class="card-text">An alcoholic professor is enrolled to teach at a juvenile facility, unbeknownst to him.
+            He soon clashes with a ruthless gangster, who uses the children as scapegoats for his crimes.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+
+      <div class="cardd">
+        <img src="./asset/LGM.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">LGM</h5>
+          <p class="card-text">An alcoholic professor is enrolled to teach at a juvenile facility, unbeknownst to him.
+            He soon clashes with a ruthless gangster, who uses the children as scapegoats for his crimes.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+
+      <div class="cardd">
+        <img src="./asset/Thangalan.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Thangalan</h5>
+          <p class="card-text">An alcoholic professor is enrolled to teach at a juvenile facility, unbeknownst to him.
+            He soon clashes with a ruthless gangster, who uses the children as scapegoats for his crimes.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="popup-over">
+  </div>
+
+  <div class="movie_container">
+    <div class="Add_movies">
+      <h2>Upload movies</h2>
+      <form class="formm">
+        <label for="poster" class="poster_btn">Movie Poster</label>
+        <input type="file" id="poster" accept="image/*" required>
+        <input type="text" class="movie_ts" id="movie_title" placeholder="Movie title" required>
+        <input type="text" class="movie_ts" id="movie_scrip" placeholder="Description" required>
+        <button type="submit" onclick="add_movie(event)">Add</button>
+        <button class="close-btn" type="button" onclick="close_btn(event)">Close</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- profile-slide -->
+  <div class="profile-box">
+    <div class="menu-item">
+      <img src="https://img.icons8.com/?size=100&id=54032&format=png&color=000000" alt="Manage Profiles" class="menu-icon">
+      <span>Manage Profiles</span>
+    </div>
+    <div class="menu-item">
+      <img src="https://img.icons8.com/?size=100&id=20749&format=png&color=000000" alt="Account" class="menu-icon">
+      <span>Account</span>
+    </div>
+    <div class="menu-item">
+      <img src="https://img.icons8.com/?size=100&id=63684&format=png&color=000000" alt="Help Centre" class="menu-icon">
+      <span>Help Centre</span>
+    </div>
+    <div class="sign-out">
+      <span>Sign out of Netflix</span>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
