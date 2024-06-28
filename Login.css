@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 *{
     padding: 0;
     margin: 0;
     
 }
+
+body {
+    background-color: black !important;
+    font-family: "Poppins", sans-serif;
+  }
 
 .full{
     background-image: url("bg.png");
@@ -13,22 +20,51 @@
     
 }
 
-.left{
+/* Login page */
+
+.Login{
     background-image: url("cort.jpg");
     background-size: cover;
     background-position: center; /* or other keywords or coordinates */
     background-repeat: no-repeat;
-    width: 40%;
-    height: 95vh;
-    background-color: beige;
-    margin: 2%;
+    width: 30%;
+    background-color: rgb(140, 140, 14);
     border-radius: 4%;
-    color: aliceblue;   
-    padding: 2% 2%  5%;
+    color: black;   
+    padding: 2% 2%  2%;
+    position: absolute;
+    /* justify-content: center; */
+    /* align-items: center; */
+    top: 20% !important;
+    left: 35% !important;
+}
+
+.Login input{
+    margin-bottom: 5%;
+}
+
+.Login-btn button{
+    margin-bottom: 4%;
+    width: 300px;
 }
 
 
-.right{
+.Login-btn label{
+    margin-bottom: 4%;
+}
+
+.sigup button{
+    margin-bottom: 9%;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+
+
+.Signup{
     align-items: center;
     width: 40%;
     height: fit-content;
@@ -37,7 +73,9 @@
     margin: 4% 0% 0% 0%;
     padding: 2%;
     position: relative;
-    left: -5%;
+    top: 20% !important;
+    left: 35% !important;
+    display: none;
 }
 
 .fs{
@@ -50,14 +88,14 @@
     text-align: center;
 }
 
-.right input{
+.Signup input{
     border: 2pt solid rgb(227, 216, 0);
     border-radius: 10px;
     margin-bottom: 5%;
     
 }
 
-.right button{
+.Signup button{
     margin: 4% 0% 4%;
     border-radius: 10px;
     padding: 2% 0% 2%;

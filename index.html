@@ -12,8 +12,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,8 +25,9 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-       <img width="70px" src="https://img.icons8.com/?size=100&id=20519&format=png&color=000000" alt="">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <img width="70px" src="https://img.icons8.com/?size=100&id=20519&format=png&color=000000" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div style="margin-left: 40px;" class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -44,15 +49,35 @@
           </li>
         </ul>
         <form class="d-flex search-grp" role="search">
-          <input  class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>
     </div>
     <div class="profile">
-      <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="spy.png" class="rounded-img" alt="">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="/asset/profile.png" class="rounded-img" alt="">
       </a>
+      <!-- profile-slide -->
+      <div class="profile-box">
+        <div class="menu-item">
+          <img src="https://img.icons8.com/?size=100&id=54032&format=png&color=000000" alt="Manage Profiles"
+            class="menu-icon">
+          <span>Manage Profiles</span>
+        </div>
+        <div class="menu-item">
+          <img src="https://img.icons8.com/?size=100&id=20749&format=png&color=000000" alt="Account" class="menu-icon">
+          <span>Account</span>
+        </div>
+        <div class="menu-item">
+          <img src="https://img.icons8.com/?size=100&id=63684&format=png&color=000000" alt="Help Centre"
+            class="menu-icon">
+          <span>Help Centre</span>
+        </div>
+        <div class="sign-out">
+          <span id="signout" onclick="sigoutt()">Sign out of Netflix</span>
+        </div>
+      </div>
     </div>
   </nav>
 
@@ -70,7 +95,10 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <!-- <img src="Leo Card.jpeg" class="d-block w-100" alt="..."> -->
-        <iframe width="100%" height="720" src="https://www.youtube.com/embed/ShsFxGV_thk?si=_BxXks0-JCfJJ8RK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="100%" height="720" src="https://www.youtube.com/embed/ShsFxGV_thk?si=_BxXks0-JCfJJ8RK"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="carousel-caption d-none d-md-block">
           <h1>LEO</h1>
           <h3>8.7⭐️ LCU movies Vijay, Trisha, Kamal</h3>
@@ -78,7 +106,10 @@
       </div>
       <div class="carousel-item">
         <!-- <img src="/asset/Kanguva Card.jpg" class="d-block w-100" alt="..."> -->
-        <iframe width="100%" height="720" src="https://www.youtube.com/embed/08cfjZNKZbQ?si=_L9lISqfatk7q8Cw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="100%" height="720" src="https://www.youtube.com/embed/08cfjZNKZbQ?si=_L9lISqfatk7q8Cw"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="carousel-caption d-none d-md-block">
           <h5>Pushpa 2</h5>
           <p>Comming soon</p>
@@ -86,7 +117,10 @@
       </div>
       <div class="carousel-item">
         <!-- <img src="..." class="d-block w-100" alt="beast"> -->
-        <iframe width="100%" height="720" src="https://www.youtube.com/embed/6xqNk5Sf5jo?si=gajJUJBkylXfBQtF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="100%" height="720" src="https://www.youtube.com/embed/6xqNk5Sf5jo?si=gajJUJBkylXfBQtF"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="carousel-caption d-none d-md-block">
           <h5>Coolie</h5>
           <p>Comming Soon</p>
@@ -182,7 +216,7 @@
         </div>
       </div>
     </div>
-    </div>
+  </div>
   </div>
 
 
@@ -203,26 +237,6 @@
     </div>
   </div>
 
-  <!-- profile-slide -->
-  <div class="profile-box">
-    <div class="menu-item">
-      <img src="https://img.icons8.com/?size=100&id=54032&format=png&color=000000" alt="Manage Profiles" class="menu-icon">
-      <span>Manage Profiles</span>
-    </div>
-    <div class="menu-item">
-      <img src="https://img.icons8.com/?size=100&id=20749&format=png&color=000000" alt="Account" class="menu-icon">
-      <span>Account</span>
-    </div>
-    <div class="menu-item">
-      <img src="https://img.icons8.com/?size=100&id=63684&format=png&color=000000" alt="Help Centre" class="menu-icon">
-      <span>Help Centre</span>
-    </div>
-    <div class="sign-out">
-      <span>Sign out of Netflix</span>
-    </div>
-  </div>
-
 </body>
 
 </html>
-
