@@ -11,6 +11,7 @@ function popupover(){
     movie_cont.style.display="block"
 }
 
+
 // popup_btnn.addEventListener("click",function(){
 //     popupove.style.display="block"
 // })
